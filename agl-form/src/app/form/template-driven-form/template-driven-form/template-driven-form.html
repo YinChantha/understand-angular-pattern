@@ -1,0 +1,28 @@
+<form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)" class="container">
+  <p>template-driven-form works!</p>
+   <input-field
+    label="First Name"
+    name="firstName"
+    [required]="true"
+    [minlength]="5"
+    [submitted]="myForm.submitted"
+    ngModel
+  ></input-field>
+   <input-field
+    label="Last Name"
+    name="lastName"
+    [required]="true"
+    [minlength]="5"
+    [submitted]="myForm.submitted"
+    ngModel
+  ></input-field>
+   <input-field
+    label="Email"
+    name="email"
+    [required]="true"
+    [minlength]="5"
+    [submitted]="myForm.submitted"
+    ngModel
+  ></input-field>
+  <button class="btn">Submit</button>
+</form>

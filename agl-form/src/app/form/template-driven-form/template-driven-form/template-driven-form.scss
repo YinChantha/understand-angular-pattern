@@ -26,27 +26,6 @@ body {
   gap: 0.25rem;
 }
 
-/* Labels */
-label {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #333;
-}
-
-/* Inputs */
-input {
-  padding: 0.5rem 0.6rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 0.9rem;
-}
-
-/* Input focus effect */
-input:focus {
-  outline: none;
-  border-color: #3b82f6; /* blue */
-  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
-}
 
 /* Title text */
 p {
@@ -63,17 +42,4 @@ p {
   border-radius: 4px;
   font-size: 0.9rem;
   cursor: pointer;
-}
-
-// validation =
-
-.is-invalid {
-  border-color: #ef4444; /* red */
-  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2);
-}
-
-.error {
-  color: #ef4444; /* red */
-  font-size: 0.8rem;
-  margin-top: 0.25rem;
 }

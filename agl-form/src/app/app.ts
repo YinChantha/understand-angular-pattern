@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { TemplateDrivenForm } from './form/template-driven-form/template-driven-form';
+import { TemplateDrivenForm } from './form/template-driven-form/template-driven-form/template-driven-form';
 
 @Component({
   selector: 'app-root',
