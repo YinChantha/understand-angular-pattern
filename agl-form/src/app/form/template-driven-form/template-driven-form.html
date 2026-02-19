@@ -1,0 +1,30 @@
+<form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)" class="container">
+  <p>template-driven-form works!</p>
+  <div>
+    <label for="firstName">First Name</label>
+    <input
+      type="text"
+      id="firstName"
+      name="firstName"
+      required
+      minlength="5"
+      ngModel
+      #firstName="ngModel"
+      [class.is-invalid]="firstName.invalid && (firstName.touched || myForm.submitted)"
+    />
+    <!-- Error messages -->
+    <small class="error" *ngIf="firstName.invalid && (firstName.touched || myForm.submitted)">
+      <span *ngIf="firstName.errors?.['required']"> First name is required </span>
+      <span *ngIf="firstName.errors?.['minlength']"> Minimum 5 characters required </span>
+    </small>
+  </div>
+  <div>
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" name="lastName" required ngModel />
+  </div>
+  <div>
+    <label for="gender">Gender</label>
+    <input type="text" id="gender" name="gender" ngModel />
+  </div>
+  <button class="btn">Submit</button>
+</form>
