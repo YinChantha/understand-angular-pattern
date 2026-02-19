@@ -1,0 +1,23 @@
+<form [formGroup]="form" (ngSubmit)="submit()" class="container">
+
+  <app-reactive-input
+    label="First Name"
+    [control]="firstNameControl"
+    [required]="true"
+  ></app-reactive-input>
+
+  <app-reactive-input
+    label="Last Name"
+    [control]="lastNameControl"
+    [required]="true"
+  ></app-reactive-input>
+
+  <app-reactive-input
+    label="Gender"
+    [control]="genderControl"
+    [required]="true"
+  ></app-reactive-input>
+
+  <button type="submit" class="btn">Submit</button>
+
+</form>
