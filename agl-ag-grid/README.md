@@ -1,7 +1,7 @@
 # AglAgGrid
 This project was generated to understand about angular-form using version 20.3.16.
 
-## Thes repo I aim to understand how is the ag grid set-up and work 
+## Thes folder I aim to understand how is the ag grid set-up and work 
 
 ## Development server
 
