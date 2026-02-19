@@ -1,0 +1,17 @@
+<section class="home">
+  <div class="hero">
+    <span class="badge">Angular 20</span>
+    <h1>Build without <em>limits</em></h1>
+    <p>Dynamic components. Zero routing. Pure speed.</p>
+  </div>
+
+  <div class="features">
+    @for (feature of features; track feature.title) {
+      <div class="card">
+        <span class="icon">{{ feature.icon }}</span>
+        <h3>{{ feature.title }}</h3>
+        <p>{{ feature.desc }}</p>
+      </div>
+    }
+  </div>
+</section>

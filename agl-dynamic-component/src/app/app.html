@@ -1,0 +1,37 @@
+<div class="layout">
+
+  <!-- Sidebar Nav -->
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="logo">◆</span>
+      <span class="brand-name">MyApp</span>
+    </div>
+
+    <nav class="nav">
+      @for (item of navItems; track item.key) {
+        <button
+          class="nav-item"
+          [class.active]="currentPage() === item.key"
+          (click)="goTo(item.key)"
+        >
+          {{ item.label }}
+        </button>
+      }
+    </nav>
+
+    <div class="sidebar-footer">
+      <span>Angular 20</span>
+    </div>
+  </aside>
+
+  <!-- Dynamic Component -->
+  <main class="content">
+    @if (currentPage() === 'home') {
+      <app-home />
+    }
+    @if (currentPage() === 'about') {
+      <app-about />
+    }
+  </main>
+
+</div>

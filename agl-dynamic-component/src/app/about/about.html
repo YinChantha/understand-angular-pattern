@@ -1,0 +1,23 @@
+<section class="about">
+  <div class="intro">
+    <h1>About <em>this app</em></h1>
+    <p>
+      A clean Angular 20 setup using dynamic component switching instead of routing —
+      perfect for SPAs, dashboards, and wizard-style flows.
+    </p>
+  </div>
+
+  <div class="stack-section">
+    <h2>Tech Stack</h2>
+    <ul class="stack-list">
+      @for (item of stack; track item) {
+        <li>{{ item }}</li>
+      }
+    </ul>
+  </div>
+
+  <div class="note">
+    <span class="label">Why dynamic components?</span>
+    <p>No URL changes, no router config, no lazy loading complexity — just clean, fast component swapping controlled by state.</p>
+  </div>
+</section>
