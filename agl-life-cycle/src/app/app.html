@@ -1,8 +1,13 @@
 <div class="container">
-  <div class="form-box">
-    <input type="text" #input placeholder="Enter your name" />
-    <button (click)="onSubmit(input)">Submit</button>
-  </div>
+  <!-- ************* this made Docheck runing whenever you typing ******************** -->
+   <!-- <input type="text" (input)="inputText = $event.target.value" #input placeholder="Enter your name" /> -->
 
-  <app-life-cycle [name]="inputText"></app-life-cycle>
+  <input type="text" #input>
+  <button (click)="onSubmit(input)">Submit</button>
+  <app-life-cycle [name]="inputText" *ngIf="isDestroyed">
+      <small>Projected content from parent</small>
+  </app-life-cycle>
+
+  <button (click)="onDestroy()">Destroy Component</button>
+
 </div>
