@@ -1,0 +1,8 @@
+<div class="container">
+  <div class="form-box">
+    <input type="text" #input placeholder="Enter your name" />
+    <button (click)="onSubmit(input)">Submit</button>
+  </div>
+
+  <app-life-cycle [name]="inputText"></app-life-cycle>
+</div>
